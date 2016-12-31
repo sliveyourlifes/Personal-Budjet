@@ -1,0 +1,47 @@
+<body>
+<div class="container">
+    <div class="row">
+        <h1 class="text-center text-uppercase" style="font-size: 60px;"><strong>This is Your personal
+            scheduler of budjet</strong></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+            <button class="btn btn-lg btn btn-success btn-block" type="submit"
+                    style="min-height: 80px; margin-top: 190px; border-radius: 25px" ng-show="buttonPlanning"
+                    ng-click="showFormPlanning()">
+                <span style="font-size: 36px;"><strong>Add Money to Budjet</strong></span>
+            </button>
+            <form role="form" name="planningForm" novalidate class="form-horizontal" style="margin-top: 126px;"
+                  ng-show="formPlanning">
+                <div class="form-group has-feedback">
+                    <label for="planningMoney" class="col-sm-2 control-label">Money</label>
+                    <div class="input-group col-sm-9">
+                        <input type="number" class="form-control" id="planningMoney" placeholder=""
+                               ng-model="addingMoney" required>
+                        <i class="glyphicon glyphicon-usd form-control-feedback" style="right: 5px"></i>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label for="planningDate" class="col-sm-2 control-label">Date</label>
+                    <div class="input-group  col-sm-9">
+                        <input type="date" class="form-control" id="planningDate" placeholder="" ng-model="addingDate"
+                               required>
+                        <i class="glyphicon glyphicon-calendar form-control-feedback" style="right: 5px"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-lg-offset-5">
+                    <button type="button" class="btn btn-lg btn-default" ng-disabled='planningForm.$invalid'
+                            ng-click="planningBudjet()">
+                        <span>ADD</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <span class="text-capitalize text-center">
+            <h2 style="font-size: 30px; margin-top: 300px; letter-spacing:5px;"><strong>budget planning - the key to success in your life</strong></h2>
+        </span>
+    </div>
+</div>
+</body>

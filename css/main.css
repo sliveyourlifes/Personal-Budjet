@@ -1,0 +1,30 @@
+
+html {
+    height: 100% !important;
+}
+
+body {
+    padding-top: 70px;
+    background: #ccc center no-repeat fixed;
+    height: 100% !important;
+
+}
+
+.content {
+    min-height: 93.5%; /* по идее д.б 100%*/
+}
+
+.content-inside {
+    padding-bottom: 0px !important; /*было 50px*/
+}
+
+.footer {
+    height: 50px !important;
+    margin-top: -50px !important;
+}
+
+.category {
+    height: 50px;
+    background: lightcoral;
+    border-bottom: 5px solid white;
+}

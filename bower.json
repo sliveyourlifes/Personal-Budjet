@@ -1,0 +1,22 @@
+{
+  "name": "DataRockets Personal Budjet",
+  "authors": [
+    "sliveyourlifes <sliveyourlifes@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "1.5.9",
+    "angular": "1.5.9",
+    "bootstrap": "^3.3.7"
+  }
+}
