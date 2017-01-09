@@ -12,6 +12,11 @@
     box-shadow: 0px 17px 25px -1px rgba(0, 0, 0, 0.75);
 }
 
+button-planning:focus {
+    border: none !important;
+    outline: none !important;
+}
+
 .text-head_banner {
     font-size: 44px;
 }

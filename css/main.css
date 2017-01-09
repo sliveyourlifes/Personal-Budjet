@@ -1,6 +1,7 @@
 
 html {
     height: 100% !important;
+    outline: none !important;
 }
 
 body {
@@ -23,10 +24,8 @@ body {
     margin-top: -50px !important;
 }
 
-.category {
-    height: 50px;
-    background: lightcoral;
-    border-bottom: 5px solid white
+.btn:focus, .btn:active:focus {
+    outline: none !important;
 }
 
     
