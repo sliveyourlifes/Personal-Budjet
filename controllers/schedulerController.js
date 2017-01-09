@@ -8,10 +8,20 @@ app.controller('schedulerController', function ($scope, $http, $filter, $timeout
 
     $scope.buttonPlanning = true;
     $scope.formPlanning = false;
+    $scope.closeForm = false;
     // show formPlanning & hide buttonPlaning
     $scope.showFormPlanning = function () {
         $scope.buttonPlanning = false;
         $scope.formPlanning = true;
+        $scope.closeForm = true;
+    };
+
+    //closeForm
+
+    $scope.closingForm = function () {
+        $scope.buttonPlanning = true;
+        $scope.formPlanning = false;
+        $scope.closeForm = false;
     };
 
     //form function
@@ -46,6 +56,7 @@ app.controller('schedulerController', function ($scope, $http, $filter, $timeout
         function hideForm() {
             $scope.buttonPlanning = true;
             $scope.formPlanning = false;
+            $scope.closeForm = false;
         }
 
         function message() {

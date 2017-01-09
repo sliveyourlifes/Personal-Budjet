@@ -1,35 +1,41 @@
-<body>
 <div class="container">
     <div class="row">
-        <h1 class="text-center text-uppercase" style="font-size: 60px;"><strong>This is Your personal
-            scheduler of budjet</strong></h1>
+        <div class="col-xs-12">
+            <h1 class="text-center text-uppercase" style="font-size: 44px;"><strong>This is Your personal
+                scheduler of budjet</strong></h1>
+        </div>
     </div>
     <div class="row">
-        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-            <button class="btn btn-lg btn btn-success btn-block" type="submit"
-                    style="min-height: 80px; margin-top: 190px; border-radius: 25px" ng-show="buttonPlanning"
-                    ng-click="showFormPlanning()">
-                <span style="font-size: 36px;"><strong>Add Money to Budjet</strong></span>
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+            <button class="btn btn btn btn-success btn-block" type="submit"
+                    style="min-height: 70px; margin-top: 170px;margin-bottom: 31px; border-radius: 25px;
+                    box-shadow: 0px 15px 19px -5px rgba(111,133,115,1);;"
+                    ng-show="buttonPlanning"
+                    ng-click="showFormPlanning()"> <!--111,133,115,1-->
+                <span style="font-size: 20px;"><strong>Add Money to Budjet</strong></span>
             </button>
-            <form role="form" name="planningForm" novalidate class="form-horizontal" style="margin-top: 126px;"
+            <form role="form" name="planningForm" novalidate class="form-horizontal clearfix" style="margin-top: 126px;"
                   ng-show="formPlanning">
+                <div style="float: right;    position: relative;top: -25px;"><!--style="position:absolute;right: 31%;top: 30%;"-->
+                    <i class="glyphicon glyphicon-remove-circle" ng-show="closeForm" ng-click="closingForm()"></i>
+                </div>
                 <div class="form-group has-feedback">
-                    <label for="planningMoney" class="col-sm-2 control-label">Money</label>
-                    <div class="input-group col-sm-9">
+                    <label for="planningMoney" class="col-sm-2 col-sm-offset-0 col-xs-2 control-label text-center" style="margin-right: 0px">Money</label>
+                    <div class="input-group col-sm-9 col-sm-offset-0 col-xs-8 col-xs-offset-3">
                         <input type="number" class="form-control" id="planningMoney" placeholder=""
                                ng-model="addingMoney" required>
                         <i class="glyphicon glyphicon-usd form-control-feedback" style="right: 5px"></i>
                     </div>
                 </div>
                 <div class="form-group has-feedback">
-                    <label for="planningDate" class="col-sm-2 control-label">Date</label>
-                    <div class="input-group  col-sm-9">
+                    <label for="planningDate" class="col-sm-2 col-sm-offset-0 col-xs-2 control-label text-center">Date</label>
+                    <div class="input-group  col-sm-9 col-sm-offset-0 col-xs-8 col-xs-offset-3">
                         <input type="date" class="form-control" id="planningDate" placeholder="" ng-model="addingDate"
                                required>
                         <i class="glyphicon glyphicon-calendar form-control-feedback" style="right: 5px"></i>
                     </div>
                 </div>
-                <div class="col-lg-4 col-lg-offset-5">
+                <div class="col-xs-4 col-xs-offset-5">
                     <button type="button" class="btn btn-lg btn-default" ng-disabled='planningForm.$invalid'
                             ng-click="planningBudjet()">
                         <span>ADD</span>
@@ -39,9 +45,10 @@
         </div>
     </div>
     <div class="row">
-        <span class="text-capitalize text-center">
-            <h2 style="font-size: 30px; margin-top: 300px; letter-spacing:5px;"><strong>budget planning - the key to success in your life</strong></h2>
-        </span>
+        <div class="col-xs-12" style="">
+            <span class="text-capitalize text-center">
+                <h2 style="font-size: 30px; margin-top: 200px; letter-spacing:5px;"><strong>budget planning - the key to success in your life</strong></h2>
+            </span>
+        </div>
     </div>
 </div>
-</body>
