@@ -9,7 +9,6 @@ body {
     height: 100% !important;
 }
 
-
 .content {
     min-height: 93% !important; /* по идее д.б 100%*/
     padding-top: 60px !important;
@@ -30,10 +29,4 @@ body {
     border-bottom: 5px solid white
 }
 
-
-@media screen and (max-width: 768px) {
-    .a{
-        display: inline-block;
-    }
-}
     
