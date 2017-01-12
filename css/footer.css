@@ -36,3 +36,11 @@
 .box ul li a:hover{
     color:black;
 }
+
+@media screen and (max-width: 375px) {
+    .box ul li a{
+        margin-left: 0px;
+        padding: 0px 5px;
+        font-size:14px;
+    }
+}
