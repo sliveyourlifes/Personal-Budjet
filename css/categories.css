@@ -107,6 +107,12 @@
 }
 
 
+@media only screen and ( max-width: 768px){
+    .label-category{
+        margin-right:15px;
+    }
+}
+
 
 @media only screen and ( max-width: 555px){
     .category-block > ul li {
@@ -115,6 +121,7 @@
 
     .category-block > ul li:first-child {
         float: none;
+        border-top:2px solid whitesmoke;
     }
 
     .category-block > ul li:nth-child(2) {
@@ -123,5 +130,6 @@
 
     .category-block > ul li:last-child {
         float: none;
+        border-bottom:2px solid whitesmoke;
     }
 }
