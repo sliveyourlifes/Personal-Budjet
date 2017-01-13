@@ -7,10 +7,21 @@ app.controller('categoriesController',function ($scope,$http,$timeout,$routePara
 
     $scope.categoryButton = true;
     $scope.categotyForm = false;
+    $scope.closeForma = false;
+
+
     $scope.showCategoryForm = function () {
         $scope.categoryButton = false;
         $scope.categotyForm = true;
-    }
+        $scope.closeForma = true;
+    };
+
+    $scope.closeCategoryForm = function () {
+        $scope.categoryButton = true;
+        $scope.categotyForm = false;
+        $scope.closeForma = false;
+    };
+
 
     // add category
 
@@ -21,7 +32,7 @@ app.controller('categoriesController',function ($scope,$http,$timeout,$routePara
             $scope.categoryButton = true;
             $scope.categotyForm = false;
         },1500)
-    }
+    };
 
     //delete Category
 
@@ -44,5 +55,21 @@ app.controller('categoriesController',function ($scope,$http,$timeout,$routePara
         $scope.activeCategory = null;
         $http.post('data/categories.json', $scope.categories);
         console.log($scope.categories);
-    }
+    };
+
+    $(document).ready(function() {
+
+        $(window).resize(function(){
+            var windowWidth = $(window).width();
+            if(windowWidth < 555)$(".rename-button").addClass("restyle-button");
+            else $(".rename-button").removeClass("restyle-button");
+        });
+
+        $(window).resize(function(){
+            var Width = $(window).width();
+            if(Width < 555)$(".rename-link").addClass("restyle-link");
+            else $(".rename-link").removeClass("restyle-link");
+        });
+
+    });
 });
